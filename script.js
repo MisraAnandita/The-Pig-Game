@@ -47,6 +47,8 @@ x.addEventListener("click", function () {
                 activeplayer=1;
                       document.querySelector('.Player1').classList.remove('active');
                      document.querySelector('.Player2').classList.add('active');
+                     document.querySelector('.player1heading').classList.remove('heading');
+                     document.querySelector('.player2heading').classList.add('heading');
                      
                  }
             
@@ -55,6 +57,8 @@ x.addEventListener("click", function () {
                 activeplayer=0;
                     document.querySelector('.Player2').classList.remove('active');
                      document.querySelector('.Player1').classList.add('active');
+                    document.querySelector('.player2heading').classList.remove('heading');
+                     document.querySelector('.player1heading').classList.add('heading');
                    
                 }
             prev=0;
@@ -69,13 +73,16 @@ x.addEventListener("click", function () {
                 activeplayer=1;
                     document.querySelector('.Player1').classList.remove('active');
                      document.querySelector('.Player2').classList.add('active');
-                    document.querySelector('.Player2').classList.add('active');
+                    document.querySelector('.player1heading').classList.remove('heading');
+                     document.querySelector('.player2heading').classList.add('heading');
                 }
             else
                 {
                 activeplayer=0;
                      document.querySelector('.Player2').classList.remove('active');
                      document.querySelector('.Player1').classList.add('active');
+                    document.querySelector('.player2heading').classList.remove('heading');
+                     document.querySelector('.player1heading').classList.add('heading');
                 }
             prev=0;
         }
@@ -98,12 +105,16 @@ y.addEventListener("click", function ()
                 activeplayer=1;
             document.querySelector('.Player1').classList.remove('active');
                      document.querySelector('.Player2').classList.add('active');
+            document.querySelector('.player1heading').classList.remove('heading');
+                     document.querySelector('.player2heading').classList.add('heading');
         }
             else
                 {
                 activeplayer=0;
                     document.querySelector('.Player2').classList.remove('active');
                      document.querySelector('.Player1').classList.add('active');
+                    document.querySelector('.player2heading').classList.remove('heading');
+                     document.querySelector('.player1heading').classList.add('heading');
                 }
     
 });
@@ -127,4 +138,7 @@ scores=[0,0];
     document.querySelector('#totalscore-1').textContent= '0';  
      document.querySelector('.Player2').classList.remove('active');
                      document.querySelector('.Player1').classList.add('active');
+    document.querySelector('.player2heading').classList.remove('heading');
+                     document.querySelector('.player1heading').classList.add('heading');
+    
 }
